@@ -5,13 +5,31 @@
 }
 
 section {
-	display: flex;
+	display: block;
 }
 
 article
 {
 	margin : 10px;
 	/*width: 80%;*/
+}
+
+aside
+{
+	border: 1px solid black;
+	display: block;
+	clear: right;
+	float: right;
+}
+
+th
+{
+	text-align: left
+}
+
+ul
+{
+	list-style-position: inside;
 }
 
 /* MENU DEROULANT */
@@ -29,6 +47,7 @@ article
 {
 	float: right;
 	width: 10%;
+	min-width: 8em;
 	margin: 10px 10px;
 	padding: 0.2%;
     box-sizing: border-box;
@@ -124,16 +143,18 @@ article
 
 nav
 {
-	width: 15%;
+	width: auto;
+	float: left;
 	text-align: center;
-	margin : 1%;
+	margin : 0;
+	max-width: 40%;
+	height: -webkit-fill-available;
 }
 
 nav ul {
     list-style-type: none;
-    float: left;
-    top-margin: 20px;
-    right-margin: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
     padding: 0;
     width: auto;
     background-color: #f1f1f1;
