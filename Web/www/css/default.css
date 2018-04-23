@@ -5,7 +5,7 @@
 }
 
 section {
-	display: block;
+	display: flex;
 }
 
 article
@@ -19,7 +19,8 @@ aside
 	border: 1px solid black;
 	display: block;
 	clear: right;
-	float: right;
+	margin: 10px;
+	align-self: flex-start;
 }
 
 th
@@ -144,11 +145,9 @@ ul
 nav
 {
 	width: auto;
-	float: left;
 	text-align: center;
 	margin : 0;
 	max-width: 40%;
-	height: -webkit-fill-available;
 }
 
 nav ul {
