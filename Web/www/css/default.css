@@ -19,8 +19,16 @@ aside
 	border: 1px solid black;
 	display: block;
 	clear: right;
+	float: right;
 	margin: 10px;
 	align-self: flex-start;
+	padding: 10px;
+}
+
+footer
+{
+	position: absolute;
+	bottom: 0;
 }
 
 
@@ -179,6 +187,7 @@ nav li a:hover:not(#nav_first_child) {
     color: white;
 }
 
+<<<<<<< HEAD
 /* PIED DE PAGE */
 
 footer {
@@ -226,4 +235,10 @@ footer .copyright {
 	display:inline-block;
 	padding-right:5px;
 	padding-left:5px
+=======
+#contenu
+{
+	background-color: #777;
+	height: 1000px;
+>>>>>>> 1b35c8a... reorganisation des articles
 }
