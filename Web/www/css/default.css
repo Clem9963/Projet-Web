@@ -45,6 +45,11 @@ ul
 
 /* MENU DEROULANT */
 
+#drop_down_list
+{
+	float: right;
+}
+
 #menu
 {
 	list-style-type: none;
@@ -85,9 +90,9 @@ ul
 	border-right:2px solid blue;
 }
 
-#menu li:last-child
+#menu li:last-of-type
 {
-	border-right: none;
+  	border: none;
 }
 
 #menu a
