@@ -28,29 +28,15 @@ function getTooltip(elements) {
 
 // Fonctions de vérification du formulaire, elles renvoient "true" si tout est ok
 
-var check = {}; // On met toutes nos fonctions dans un objet littéral
+var check = {}, // On met toutes nos fonctions dans un objet littéral
+    checked = {}; // Pour griser le bouton de validation
 
-check['sex'] = function() {
-
-    var sex = document.getElementsByName('sex'),
-        tooltipStyle = getTooltip(sex[1].parentNode).style;
-
-    if (sex[0].checked || sex[1].checked) {
-        tooltipStyle.display = 'none';
-        return true;
-    } else {
-        tooltipStyle.display = 'inline-block';
-        return false;
-    }
-
-};
-
-check['lastName'] = function(id) {
+check['lastname'] = function(id) {
 
     var name = document.getElementById(id),
         tooltipStyle = getTooltip(name).style;
 
-    if (name.value.length >= 2) {
+    if (!/[^a-z\u00E0-\u00F6\u00F8-\u00FF-']/i.test(name.value) && name.value.length >= 1) {
         name.className = 'correct';
         tooltipStyle.display = 'none';
         return true;
@@ -62,49 +48,47 @@ check['lastName'] = function(id) {
 
 };
 
-check['firstName'] = check['lastName']; // La fonction pour le prénom est la même que celle du nom
+check['firstname'] = check['lastname']; // La fonction pour le prénom est la même que celle du nom
 
-check['age'] = function() {
+check['useremail'] = function() {
 
-    var age = document.getElementById('age'),
-        tooltipStyle = getTooltip(age).style,
-        ageValue = parseInt(age.value);
+    var email = document.getElementById('useremail'),
+        tooltipStyle = getTooltip(email).style;
 
-    if (!isNaN(ageValue) && ageValue >= 5 && ageValue <= 140) {
-        age.className = 'correct';
+    if (/[a-zA-Z0-9._]+@[a-zA-Z0-9._]+\.[a-zA-Z]{2,6}/i.test(email.value)) {
+        email.className = 'correct';
         tooltipStyle.display = 'none';
         return true;
     } else {
-        age.className = 'incorrect';
+        email.className = 'incorrect';
         tooltipStyle.display = 'inline-block';
         return false;
     }
 
 };
 
-check['login'] = function() {
+check['username'] = function() {
 
-    var login = document.getElementById('login'),
+    var login = document.getElementById('username'),
         tooltipStyle = getTooltip(login).style;
 
-    if (login.value.length >= 4) {
-        login.className = 'correct';
-        tooltipStyle.display = 'none';
-        return true;
-    } else {
-        login.className = 'incorrect';
-        tooltipStyle.display = 'inline-block';
-        return false;
-    }
-
+        if (/[a-zA-Z0-9-_]{4,}/.test(login.value)) {
+            login.className = 'correct';
+            tooltipStyle.display = 'none';
+            return true;
+        } else {
+            login.className = 'incorrect';
+            tooltipStyle.display = 'inline-block';
+            return false;
+        }
 };
 
-check['pwd1'] = function() {
+check['userpwd'] = function() {
 
-    var pwd1 = document.getElementById('pwd1'),
+    var pwd1 = document.getElementById('userpwd'),
         tooltipStyle = getTooltip(pwd1).style;
 
-    if (pwd1.value.length >= 6) {
+    if (/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[\S]{8,}$/.test(pwd1.value)) {
         pwd1.className = 'correct';
         tooltipStyle.display = 'none';
         return true;
@@ -116,40 +100,6 @@ check['pwd1'] = function() {
 
 };
 
-check['pwd2'] = function() {
-
-    var pwd1 = document.getElementById('pwd1'),
-        pwd2 = document.getElementById('pwd2'),
-        tooltipStyle = getTooltip(pwd2).style;
-
-    if (pwd1.value == pwd2.value && pwd2.value != '') {
-        pwd2.className = 'correct';
-        tooltipStyle.display = 'none';
-        return true;
-    } else {
-        pwd2.className = 'incorrect';
-        tooltipStyle.display = 'inline-block';
-        return false;
-    }
-
-};
-
-check['country'] = function() {
-
-    var country = document.getElementById('country'),
-        tooltipStyle = getTooltip(country).style;
-
-    if (country.options[country.selectedIndex].value != 'none') {
-        tooltipStyle.display = 'none';
-        return true;
-    } else {
-        tooltipStyle.display = 'inline-block';
-        return false;
-    }
-
-};
-
-
 // Mise en place des événements
 
 (function() { // Utilisation d'une IIFE pour éviter les variables globales.
@@ -159,8 +109,14 @@ check['country'] = function() {
         inputsLength = inputs.length;
 
     for (var i = 0; i < inputsLength; i++) {
+        checked[inputs[i].id] = false;
         inputs[i].addEventListener('keyup', function(e) {
-            check[e.target.id](e.target.id); // "e.target" représente l'input actuellement modifié
+            checked[e.target.id] = check[e.target.id](e.target.id); // "e.target" représente l'input actuellement modifié
+            var submitOk = true;
+            for(var c in checked) {
+               submitOk = submitOk && checked[c];
+            }
+            document.getElementById("envoyer").disabled = !submitOk;
         });
     }
 
@@ -169,11 +125,11 @@ check['country'] = function() {
         var result = true;
 
         for (var i in check) {
-            result = check[i](i) && result;
+            result = result && check[i](i);
         }
 
         if (result) {
-            alert('Le formulaire est bien rempli.');
+            document.getElementById("myForm").submit();
         }
 
         e.preventDefault();
