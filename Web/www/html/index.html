@@ -16,8 +16,6 @@
 		<link rel="stylesheet" href="../css/default.css"> 
 		<!-- <link rel="shortcut icon" type="image/x-icon" href="doc_accueil/favicon_accueil.ico" /> -->
 
-		<script src="../js/connect.js"></script>
-
 		<!-- Copyright -->
 		<link rel="license" href="http://creativecommons.org/licenses/by-nc-nd/2.0/fr/">
 	</head>
@@ -30,6 +28,7 @@
 				<li><a href="#">Sans Lien</a></li>
 				<li><a href="#">Sans Lien</a></li>
 				<li><a href="#">Sans Lien</a></li>
+				<li><a id="greetingMessage"></a></li>
 
 				<input type="text" name="search" id="searchBox" placeholder="Rechercher...">
 
@@ -37,19 +36,19 @@
 					<a href="#" id="drop_down_list_title">Mon compte</a>
 					<div id="drop_down_list_content">
 						<a href="./register.html">Inscription</a>
-						<form id="connect">
+						<form name="connect" id="connexionForm" target="_blank">
 							<table>
 								<tr>
-									<th><label class="form_col" for="login">Login :</label></th>
-									<td><input name="login" id="login" type="text" /></td>
+									<th><label class="form_col" for="username">Login :</label></th>
+									<td><input name="username" id="username" type="text" /></td>
 								</tr>
 								<tr></tr>
-									<th><label class="form_col" for="password">Password :</label></th>
-									<td><input name="password" id="password" type="password"/></th>
+									<th><label class="form_col" for="userpwd">Password :</label></th>
+									<td><input name="userpwd" id="userpwd" type="password"/></th>
 								</tr>
 								<tr>
 									<th></th>
-									<td><input id="envoyer" value="Me connecter" onclick="initConnect()"/></td>
+									<td><input type='submit' id="envoyer" value="Me connecter"/></td>
 								</tr>
 							</table>
 						</form>
@@ -143,6 +142,8 @@
 				<span class="second-line">Tous droits réservés.</span>
 			</p>
 	</footer>
+
+	<script src="../js/connect.js"></script>
 
 	</body>
 </html>
