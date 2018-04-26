@@ -46,7 +46,7 @@ ul {
 	border: 2px solid #ccc;
 }
 
-#menu input {
+#searchBox {
 	float: right;
 	width: 10%;
 	min-width: 8em;
@@ -65,7 +65,7 @@ ul {
 	transition: width 0.4s ease-in-out;
 }
 
-#menu input:focus {
+#searchBox:focus {
 	width: 30%;
 }
 
@@ -129,6 +129,33 @@ ul {
 #drop_down_list:hover #drop_down_list_content {
 	display: block;
 }
+
+#drop_down_list_content form {
+	text-align: left;
+	color: white;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+#drop_down_list_content .form_col {
+    display: inline-block;
+    margin-right: 15px;
+    width: 5em;
+    min-height: 1px;
+	text-align: right;
+	font-weight: normal;
+}
+
+#drop_down_list_content input {
+	width: 95%;
+	text-align: left;
+}
+
+#drop_down_list_content #envoyer {
+	text-align: center;
+	margin-top: 15px;
+}
+
 
 /* MENU DE NAVIGATION */
 
