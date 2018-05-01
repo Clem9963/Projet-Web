@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="author" content="Clément Dif - Félix Dhumes" />
@@ -23,12 +23,14 @@
 	<body>
 
 		<header>
-			<ul id="menu">
-			
-				<li><a href="#">Sans Lien</a></li>
-				<li><a href="#">Sans Lien</a></li>
-				<li><a href="#">Sans Lien</a></li>
-				<li><a id="greetingMessage"></a></li>
+			<div id="menu">
+
+				<ul id="menu_links">
+					<li><a href="#">Sans Lien</a></li>
+					<li><a href="#">Sans Lien</a></li>
+					<li><a href="#">Sans Lien</a></li>
+					<li><a id="greetingMessage"></a></li>
+				</ul>
 
 				<input type="text" name="search" id="searchBox" placeholder="Rechercher...">
 
@@ -42,9 +44,9 @@
 									<th><label class="form_col" for="username">Login :</label></th>
 									<td><input name="username" id="username" type="text" /></td>
 								</tr>
-								<tr></tr>
+								<tr>
 									<th><label class="form_col" for="userpwd">Password :</label></th>
-									<td><input name="userpwd" id="userpwd" type="password"/></th>
+									<td><input name="userpwd" id="userpwd" type="password"/></td>
 								</tr>
 								<tr>
 									<th></th>
@@ -53,9 +55,10 @@
 							</table>
 						</form>
 					</div>
-				</div>
-				
-			</ul>
+				</div>	
+
+			</div>
+
 		</header>
 
 		<section>
@@ -70,11 +73,11 @@
 
 			<div>
 				<aside>
+					<figure>
+						<img src="http://wifibot.com/v4pluslidarp.png?v=266bgo1ome0o6kcg" alt="Exemple d'un robot wifibot avec 4 roues, un lidar et une caméra">
+						<figcaption>Un robot Wifibot</figcaption>
+					</figure>
 					<table>
-						<caption>
-							<img src="http://wifibot.com/v4pluslidarp.png?v=266bgo1ome0o6kcg" alt="Exemple d'un robot wifibot avec 4 roues, un lidar et une caméra">
-							<figcaption>Un robot Wifibot</figcaption>
-						</caption>
 						<tbody>
 							<tr>
 								<th>Constructeur</th>
@@ -131,7 +134,7 @@
 		</section>
 		
 		<footer>
-		  <h3>Les robots c'est bien.</h3>
+		  <h2>Les robots c'est bien.</h2>
 
 		  <ul class="list-inline">
 					<li><a href="http://wifibot.com/" class="neon">Site constructeur</a></li>
