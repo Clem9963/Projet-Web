@@ -147,10 +147,10 @@ figcaption {
 	display: block;
 }
 #drop_down_list_content .form_col {
-    display: inline-block;
-    margin-right: 15px;
-    width: 5em;
-    min-height: 1px;
+	display: inline-block;
+	margin-right: 15px;
+	width: 5em;
+	min-height: 1px;
 	text-align: right;
 	font-weight: normal;
 }

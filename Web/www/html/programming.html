@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<!-- <link rel="stylesheet" type="text/css" href="pageTP2_fichiers/default.css"> -->
+
+		<!-- Meta -->
+		<meta name="Subject" content="Wifibot">
+		<meta name="Description" content="Presentation du robot wifibot">
+
+		<title>Wifibot - La programmation</title>
+		
+		<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/aileron" type="text/css"/>
+		<link rel="stylesheet" href="../css/default.css"> 
+		
+		<!-- Copyright -->
+		<link rel="license" href="http://creativecommons.org/licenses/by-nc-nd/2.0/fr/">
+	<style></style>
+	</head>
+	 
+	<body>
+		
+		<article>
+			<h2>La Programmation</h2>
+			<p>Le Wifibot, puisqu'il contient un <abbr title="système d'exploitation">OS</abbr> classique, peut exécuter n'importe quel programme fait pour cet OS.</p>
+			<p>La carte de contrôle moteur est connectés par une liaison rs232 avec l'ordinateur. Il faudra donc écrire une librairie pour envoyer les bons signaux à la carte depuis votre programme. Le protocole de communication peut être trouvé <a href="http://www.wifibot.com/download/2012/LOW_LEVEL_PROTOCOLE_RS232_DSPIC33EP.pdf">ici</a>. Un exemple de librairie de communication avec la carte en C est donné.</p>
+			<p>La carte de contrôle n'est pas programmable, et comprend les fonctions suivantes:</p>
+			<ul>
+				<li>envoie du niveau de batterie, de la vitesse des moteurs gauches/droits, la distance parcourue par les moteurs, les distances mesurées par les capteurs de distance</li>
+				<li>contrôle de la puissance envoyée aux moteurs</li>
+				<li>contrôle de la vitesse des moteurs par une boucle PID</li>
+				<li>contrôle de 3 relais integrés</li>
+			</ul>
+		</article>
+	
+		<footer>
+			&#9205;<a href="./presentation.html">Retour</a>
+		</footer>
+		
+	</body>
+</html>

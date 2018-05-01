@@ -2,44 +2,44 @@
 <html lang="fr">
 
 <head>
-    <meta charset="utf-8" />
-    <title>TP : Un formulaire interactif</title>
-    <link rel="stylesheet" href="../css/register.css">
+	<meta charset="utf-8" />
+	<title>TP : Un formulaire interactif</title>
+	<link rel="stylesheet" href="../css/register.css">
 </head>
 
 <body>
 
-    <form id="myForm" action="../htbin/register.py" method="post">
+	<form id="myForm" action="../htbin/register.py" method="post">
 
-        <label class="form_col" for="lastname">Nom :</label>
-        <input name="lastname" id="lastname" type="text" />
-        <span class="tooltip">Entrez un nom</span>
-        <br /><br />
+		<label class="form_col" for="lastname">Nom :</label>
+		<input name="lastname" id="lastname" type="text" />
+		<span class="tooltip">Entrez un nom</span>
+		<br /><br />
 
-        <label class="form_col" for="firstname">Prénom :</label>
-        <input name="firstname" id="firstname" type="text" />
-        <span class="tooltip">Entrez un prénom</span>
-        <br /><br />
+		<label class="form_col" for="firstname">Prénom :</label>
+		<input name="firstname" id="firstname" type="text" />
+		<span class="tooltip">Entrez un prénom</span>
+		<br /><br />
 
-        <label class="form_col" for="username">Nom d'utilisateur :</label>
-        <input name="username" id="username" type="text" />
-        <span class="tooltip">Le pseudo ne peut pas faire moins de 4 caractères</span>
-        <br /><br />
+		<label class="form_col" for="username">Nom d'utilisateur :</label>
+		<input name="username" id="username" type="text" />
+		<span class="tooltip">Le pseudo ne peut pas faire moins de 4 caractères</span>
+		<br /><br />
 
-        <label class="form_col" for="userpwd">Mot de passe :</label>
-        <input name="userpwd" id="userpwd" type="password" />
-        <span class="tooltip">Le mot de passe doit contenir au moins une minuscule, une majuscule, un chiffre et faire au moins 8 caractères</span>
-        <br /><br />
+		<label class="form_col" for="userpwd">Mot de passe :</label>
+		<input name="userpwd" id="userpwd" type="password" />
+		<span class="tooltip">Le mot de passe doit contenir au moins une minuscule, une majuscule, un chiffre et faire au moins 8 caractères</span>
+		<br /><br />
 
-        <label class="form_col" for="useremail">E-mail :</label>
-        <input name="useremail" id="useremail" type="text" />
-        <span class="tooltip">Entrez un mail de la forme utilisateur@serveur.domaine</span>
-        <br /><br />
+		<label class="form_col" for="useremail">E-mail :</label>
+		<input name="useremail" id="useremail" type="text" />
+		<span class="tooltip">Entrez un mail de la forme utilisateur@serveur.domaine</span>
+		<br /><br />
 
-        <span class="form_col"></span>
-        <input type="submit" id="envoyer" value="M'inscrire" disabled="disabled"/> <input type="reset" value="Réinitialiser le formulaire" />
+		<span class="form_col"></span>
+		<input type="submit" id="envoyer" value="M'inscrire" disabled="disabled"/> <input type="reset" value="Réinitialiser le formulaire" />
 
-    </form>
+	</form>
 	
 	<script src="../js/register.js"></script>
 </body>
