@@ -1,4 +1,18 @@
-﻿body {
+﻿noscript {
+	display: block;
+	font-family: sans-serif;
+	top: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+	font-size: 100%;
+	color: #FFF;
+	background-color: #AE0000;
+	padding: 5px 0;
+}
+
+body {
 	font-family: 'AileronRegular';
 	font-weight: normal;
 	font-style: normal; 
@@ -80,7 +94,7 @@ figcaption {
 
 #menu li {
 	float: left;
-	border-right:2px solid blue;
+	border-right:2px solid grey;
 }
 
 #menu li:last-of-type {
@@ -169,7 +183,10 @@ figcaption {
 /* MENU DE NAVIGATION */
 
 nav {
+	position: sticky;
+	top: 5px;
 	width: auto;
+	height: 200px;
 	text-align: center;
 	margin : 0;
 	max-width: 40%;
@@ -260,6 +277,7 @@ footer .copyright {
 =======
 	padding-left:5px;
 }
+<<<<<<< HEAD
 
 #contenu {
 >>>>>>> d8d7d3d... Correction d'un léger bug au niveau des bordures bleues dans le menu.
@@ -271,3 +289,5 @@ footer .copyright {
 	height: 700px;
 >>>>>>> 1eea0e5... ajout de css
 }
+=======
+>>>>>>> 9c786cf... Ajout d'une banière au-dessus du menu lorsque le JavaScript n'est pas activé, modifications légères du menu avec l'ajout de liens externes notamment et ajout d'un article et d'une vidéo dans "presentation.html".
