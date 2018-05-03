@@ -1,21 +1,24 @@
-﻿noscript {
-	display: block;
-	font-family: sans-serif;
-	top: 0;
-	left: 0;
-	width: 100%;
-	text-align: center;
-	font-weight: bold;
-	font-size: 100%;
-	color: #FFF;
-	background-color: #AE0000;
-	padding: 5px 0;
-}
+﻿/* REGLES GENERALES */
 
 body {
 	font-family: 'AileronRegular';
 	font-weight: normal;
 	font-style: normal; 
+}
+
+noscript p {
+	display: block;
+	font-family: sans-serif;
+	top: 0;
+	left: 0;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 100%;
+	color: #FFF;
+	background-color: #AE0000;
 }
 
 section {
@@ -53,11 +56,11 @@ figcaption {
 	text-align: center;
 }
 
-/* MENU */
+/* MENU PRINCIPAL */
 
 #menu {
-	margin: 0;
-	padding: 0;
+	margin: 0px;
+	padding: 0px;
 	overflow: hidden;
 	background-color: #333;
 	border: 2px solid #ccc;
@@ -69,7 +72,7 @@ figcaption {
 	padding: 0;
 }
 
-#searchBox {
+#search_box {
 	float: right;
 	width: 10%;
 	min-width: 8em;
@@ -88,7 +91,7 @@ figcaption {
 	transition: width 0.4s ease-in-out;
 }
 
-#searchBox:focus {
+#search_box:focus {
 	width: 30%;
 }
 
@@ -188,14 +191,12 @@ nav {
 	width: auto;
 	height: 200px;
 	text-align: center;
-	margin : 0;
+	margin-right: 20px;*/
 	max-width: 40%;
 }
 
 nav ul {
 	list-style-type: none;
-	margin-top: 20px;
-	margin-right: 20px;
 	padding: 0;
 	width: auto;
 	background-color: #f1f1f1;
@@ -231,6 +232,7 @@ footer {
 	color:#484848;
 	text-align:center
 }
+
 footer h2 {
 	margin-bottom:30px;
 	margin-top:0;
@@ -238,23 +240,29 @@ footer h2 {
 	font-weight:300;
 	opacity:.2
 }
+
 footer h2:hover {
 	transform: rotate3d(1,2,3,45deg);
 }
+
 footer ul {
 	margin-bottom:24px
 }
+
 footer ul li {
 	font-size:18px;
 	color:#343434;
 	line-height:1.6
 }
+
 footer p {
 	margin-bottom:30px
 }
+
 footer a{
 	color:#333;
 }
+
 footer .copyright {
 	opacity:.5;
 	line-height:1.7
@@ -278,6 +286,7 @@ footer .copyright {
 	padding-left:5px;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 #contenu {
 >>>>>>> d8d7d3d... Correction d'un léger bug au niveau des bordures bleues dans le menu.
@@ -291,3 +300,18 @@ footer .copyright {
 }
 =======
 >>>>>>> 9c786cf... Ajout d'une banière au-dessus du menu lorsque le JavaScript n'est pas activé, modifications légères du menu avec l'ajout de liens externes notamment et ajout d'un article et d'une vidéo dans "presentation.html".
+=======
+
+/* MEDIA QUERIES */
+@media all and (max-width: 800px)
+{
+	/* Règles affichage mobile */
+	#menu_links {
+		display: none;
+	}
+
+	#search_box {
+		float: none;
+	}
+}
+>>>>>>> 0be883a... Améliorations globales et ajout d'une media query.
