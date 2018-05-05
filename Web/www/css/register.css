@@ -50,20 +50,13 @@ input {
 	border: 1px solid #CCC;
 	border-radius: 2px;
 	outline: none; /* Retire les bordures appliquées par certains navigateurs (Chrome notamment) lors du focus des éléments <input> */
+	transition-property: border-color, box-shadow;
+	transition-duration: 500ms; 
 }
 	
 input:focus {
 	border-color: rgba(82, 168, 236, 0.75);
 	box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
-}
-	
-.form_val {
-    background-color: #ffffff;
-    transition-duration: 500ms; /* La transition dure 500ms */
-}
-
-.form_val:focus {
-    background-color: #eeeeee;
 }
 	
 .correct {

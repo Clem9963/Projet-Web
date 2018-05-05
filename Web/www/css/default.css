@@ -59,7 +59,7 @@ figcaption {
 /* MENU PRINCIPAL */
 
 #menu {
-	margin: 0px;
+	margin: 0px 10px;
 	padding: 0px;
 	overflow: hidden;
 	background-color: #333;
@@ -183,16 +183,20 @@ figcaption {
 }
 
 
-/* MENU DE NAVIGATION */
+/* OUTILS SUR LA GAUCHE DE LA PAGE */
+
+#left_tools {
+	width: 200px;
+	margin: 10px;
+	position: sticky;
+	top: 15px;
+}
+
+/* Menu de navigation */
 
 nav {
-	position: sticky;
-	top: 5px;
-	width: auto;
 	height: 200px;
 	text-align: center;
-	margin-right: 20px;*/
-	max-width: 40%;
 }
 
 nav ul {
@@ -221,6 +225,64 @@ nav li a:hover:not(#nav_first_child) {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+/* Formulaire de connexion */
+
+#left_tools h3 {
+	font-size: 20px;
+	font-weight: 600;
+	margin: 10px;
+}
+
+.form_val {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 12px;
+	margin: 5px 0;
+	border: 1px solid #CCC;
+	border-radius: 4px;
+	opacity: 0.85;
+	font-size: 14px;
+	text-decoration: none;
+	transition-property: border-color, box-shadow;
+	transition-duration: 500ms; 
+}
+
+.form_val:focus {
+	border-color: rgba(82, 168, 236, 0.75);
+	box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
+}
+
+#login {
+	padding: 10px 10px;
+	border: 1px solid black;
+	border-radius: 4px;
+}
+
+#envoyer {
+	margin: 5px auto;
+    padding: 12px;
+	background-color: #4CAF50;
+	color: white;
+	cursor: pointer;
+	width: 100%;
+    border: none;
+    border-radius: 4px;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 15px;
+    text-decoration: none;
+}
+
+#left_tools p {
+	text-align: center;
+	font-size: 14px;
+	margin: 10px 0px;
+}
+
+>>>>>>> 813f87a... Ajout d'une transition pour le 3D Transform du pied de page dans "presentation.html" et d'une transition pour la coloration des inputs dans "register.html". Par ailleurs, déplacement du formulaire de connexion vers la gauche de la page dans "presentation.html".
 /* PIED DE PAGE */
 
 footer {
@@ -238,7 +300,12 @@ footer h2 {
 	margin-top:0;
 	font-size:28px;
 	font-weight:300;
+<<<<<<< HEAD
 	opacity:.2
+=======
+	opacity:.2;
+	transition-duration: 500ms;
+>>>>>>> 813f87a... Ajout d'une transition pour le 3D Transform du pied de page dans "presentation.html" et d'une transition pour la coloration des inputs dans "register.html". Par ailleurs, déplacement du formulaire de connexion vers la gauche de la page dans "presentation.html".
 }
 
 footer h2:hover {

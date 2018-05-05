@@ -40,42 +40,36 @@
 
 				<input type="text" name="search" id="search_box" placeholder="Rechercher...">
 
-				<div id="drop_down_list">
-					<a href="#" id="drop_down_list_title">Mon compte</a>
-					<div id="drop_down_list_content">
-						<a href="./register.html">Inscription</a>
-						<form name="connect" id="connexionForm" target="_blank">
-							<table>
-								<tr>
-									<th><label class="form_col" for="username">Login :</label></th>
-									<td><input name="username" id="username" type="text" /></td>
-								</tr>
-								<tr>
-									<th><label class="form_col" for="userpwd">Password :</label></th>
-									<td><input name="userpwd" id="userpwd" type="password"/></td>
-								</tr>
-								<tr>
-									<th></th>
-									<td><input type='submit' id="envoyer" value="Me connecter"/></td>
-								</tr>
-							</table>
-						</form>
-					</div>
-				</div>	
-
 			</div>
 
 		</header>
 
 		<section>
-			<nav>
-				<ul>
-					<li><a id="nav_first_child" href="#">NAVIGATION</a></li>
-					<li><a href="#presentation">Présentation</a></li>
-					<li><a href="./mechanics.html">Mécanique</a></li>
-					<li><a href="./programming.html">Programmation</a></li>
-				</ul>
-			</nav>
+			<div>
+				<div id="left_tools">
+					<nav>
+						<ul>
+							<li><a id="nav_first_child" href="#">NAVIGATION</a></li>
+							<li><a href="#presentation">Présentation</a></li>
+							<li><a href="./mechanics.html">Mécanique</a></li>
+							<li><a href="./programming.html">Programmation</a></li>
+						</ul>
+					</nav>
+
+					<div id="login">
+						<h3>Se connecter</h3>
+						<form name="connect" id="connexionForm" target="_blank">
+							<input class="form_val" name="username" id="username" type="text" placeholder="Nom d'utilisateur"/>
+							<input class="form_val" name="userpwd" id="userpwd" type="password" placeholder="Mot de passe"/>
+							<input type='submit' id="envoyer" value="Me connecter"/>
+						</form>
+						<p>
+						    Vous n'avez pas de compte ?<br/>
+						    <a href="./register.html">S'enregistrer</a>
+						</p>
+					</div>
+				</div>
+			</div>
 
 			<div>
 				<aside>
