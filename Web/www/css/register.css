@@ -1,6 +1,6 @@
 body {
-    padding-top: 50px;
-    font-family: 'AileronRegular';
+	padding-top: 50px;
+	font-family: 'AileronRegular';
 	font-weight: normal;
 	font-style: normal; 
 }
@@ -38,11 +38,11 @@ form {
 	
 .form_col {
 	font-weight: 600;
-    display: block;
-    margin-top: 15px; 
-    padding: 3px 0px;
-    min-height: 1px;
-    text-align: left;
+	display: block;
+	margin-top: 15px; 
+	padding: 3px 0px;
+	min-height: 1px;
+	text-align: left;
 }
 
 input {
