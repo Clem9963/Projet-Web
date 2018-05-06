@@ -158,11 +158,6 @@ nav li a:hover:not(#nav_first_child) {
 =======
 /* Formulaire de connexion */
 
-#left_tools_container {
-	display: flex;
-    justify-content: center;
-}
-
 #left_tools h3 {
 	font-size: 20px;
 	font-weight: 600;
@@ -351,6 +346,11 @@ footer .copyright {
 	iframe {
 		width: 100%;
 		height: auto;
+	}
+
+	#left_tools_container {
+		display: flex;
+	    justify-content: center;
 	}
 
 	#left_tools {
