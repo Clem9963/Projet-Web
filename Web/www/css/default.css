@@ -1,4 +1,4 @@
-﻿/* REGLES GENERALES */
+/* REGLES GENERALES */
 
 body {
 	font-family: 'AileronRegular';
@@ -58,21 +58,38 @@ figcaption {
 
 /* MENU PRINCIPAL */
 
-#menu {
+.menu_class {
+	background-color: #333;
+	overflow: hidden;
 	margin: 0px 10px;
 	padding: 0px;
 	overflow: hidden;
-	background-color: #333;
 	border: 2px solid #ccc;
 }
 
-#menu_links {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
+.menu_class a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
 }
 
-#search_box {
+.menu_class a:hover {
+	background-color: #00A9BC;
+}
+
+.active {
+	background-color: #00A9BC;
+}
+
+#menu_icon {
+	display: none;
+} 
+
+.menu_class input {
 	float: right;
 	width: 10%;
 	min-width: 8em;
@@ -91,97 +108,9 @@ figcaption {
 	transition: width 0.4s ease-in-out;
 }
 
-#search_box:focus {
+.menu_class input:focus {
 	width: 30%;
 }
-
-#menu li {
-	float: left;
-	border-right:2px solid grey;
-}
-
-#menu li:last-of-type {
-	border: none;
-}
-
-#menu a {
-	display: block;
-	color: white;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-}
-
-#menu li a:hover {
-	background-color: #00A9BC;
-}
-
-#menu li a, #drop_down_list_title {
-	display: inline-block;
-	color: white;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-}
-
-#menu li a:hover, #drop_down_list:hover #drop_down_list_title {
-	background-color: #00A9BC;
-}
-
-#drop_down_list {
-	display: inline-block;
-	float: right;
-}
-
-#drop_down_list_content {
-	display: none;
-	position: absolute;
-	background-color: black;
-	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
-}
-
-#drop_down_list_content a {
-	color: white;
-	padding: 12px 16px;
-	text-decoration: none;
-	display: block;
-}
-
-#drop_down_list_content a:hover {
-	background-color: #00A9BC
-}
-
-#drop_down_list:hover #drop_down_list_content {
-	display: block;
-}
-
-#drop_down_list_content form {
-	text-align: left;
-	color: white;
-	padding: 12px 16px;
-	text-decoration: none;
-	display: block;
-}
-#drop_down_list_content .form_col {
-	display: inline-block;
-	margin-right: 15px;
-	width: 5em;
-	min-height: 1px;
-	text-align: right;
-	font-weight: normal;
-}
-
-#drop_down_list_content input {
-	width: 95%;
-	text-align: left;
-}
-
-#drop_down_list_content #envoyer {
-	text-align: center;
-	margin-top: 15px;
-}
-
 
 /* OUTILS SUR LA GAUCHE DE LA PAGE */
 
@@ -229,6 +158,11 @@ nav li a:hover:not(#nav_first_child) {
 =======
 /* Formulaire de connexion */
 
+#left_tools_container {
+	display: flex;
+    justify-content: center;
+}
+
 #left_tools h3 {
 	font-size: 20px;
 	font-weight: 600;
@@ -256,24 +190,24 @@ nav li a:hover:not(#nav_first_child) {
 
 #login {
 	padding: 10px 10px;
-	border: 1px solid black;
+	border: 1px solid #999;
 	border-radius: 4px;
 }
 
 #envoyer {
 	margin: 5px auto;
-    padding: 12px;
+	padding: 12px;
 	background-color: #4CAF50;
 	color: white;
 	cursor: pointer;
 	width: 100%;
-    border: none;
-    border-radius: 4px;
-    opacity: 0.85;
-    display: inline-block;
-    font-size: 15px;
-    line-height: 15px;
-    text-decoration: none;
+	border: none;
+	border-radius: 4px;
+	opacity: 0.85;
+	display: inline-block;
+	font-size: 15px;
+	line-height: 15px;
+	text-decoration: none;
 }
 
 #left_tools p {
@@ -370,15 +304,63 @@ footer .copyright {
 =======
 
 /* MEDIA QUERIES */
-@media all and (max-width: 800px)
-{
-	/* Règles affichage mobile */
-	#menu_links {
+
+@media all and (max-width: 600px) {
+	.menu_class a:not(:first-child), .menu_class input {
 		display: none;
 	}
 
-	#search_box {
+	#menu_icon {
+		float: right;
+		display: block;
+	}
+
+	.menu_class.responsive {
+		position: relative;
+	}
+
+	.menu_class.responsive #menu_icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.menu_class.responsive a, .menu_class.responsive input {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+
+	.menu_class.responsive input {
+		width: 90%;
+	}
+
+	section {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	aside {
 		float: none;
 	}
+<<<<<<< HEAD
 }
 >>>>>>> 0be883a... Améliorations globales et ajout d'une media query.
+=======
+
+	iframe {
+		width: 100%;
+		height: auto;
+	}
+
+	#left_tools {
+		width: auto;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	nav {
+		margin-right: 30px;
+	}
+}
+>>>>>>> b9fc7cb... Amélioration du design du site pour l'affichage sur mobile et petits écrans via une Media Query et un script JavaScript.

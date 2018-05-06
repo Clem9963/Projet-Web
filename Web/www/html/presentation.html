@@ -29,23 +29,19 @@
 				</p>
 			</noscript>
 
-			<div id="menu">
-
-				<ul id="menu_links">
-					<li><a href="./presentation.html">Accueil</a></li>
-					<li><a href="http://www.wifibot.com/download/2012/wifibotlab_french_guide2012.pdf">Manuel d'utilisation</a></li>
-					<li><a href="https://www.isima.fr/wifibot/">Projet WifiBot ISIMA</a></li>
-					<li><a id="greetingMessage"></a></li>
-				</ul>
-
-				<input type="text" name="search" id="search_box" placeholder="Rechercher...">
-
-			</div>
+			 <div id="menu_id" class="menu_class">
+				<a href="./presentation.html" class="active">Accueil</a>
+				<a href="http://www.wifibot.com/download/2012/wifibotlab_french_guide2012.pdf">Manuel d'utilisation</a>
+				<a href="https://www.isima.fr/wifibot/">Projet WifiBot ISIMA</a>
+				<a id="greetingMessage"></a>
+				<a href="#" id="menu_icon" onclick="displayMenu()">&#9776;</a>
+				<input type="text" name="search" placeholder="Rechercher...">
+			</div> 
 
 		</header>
 
 		<section>
-			<div>
+			<div id="left_tools_container">
 				<div id="left_tools">
 					<nav>
 						<ul>
@@ -147,6 +143,7 @@
 	</footer>
 
 	<script src="../js/connect.js"></script>
+	<script src="../js/menu.js"></script>
 
 	</body>
 </html>
