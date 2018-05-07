@@ -11,14 +11,18 @@ noscript p {
 	font-family: sans-serif;
 	top: 0;
 	left: 0;
-	width: 100%;
-	margin: 0px;
-	padding: 0px;
+	width: auto;
+	margin: 10px;
+	padding: 5px;
 	text-align: center;
 	font-weight: bold;
 	font-size: 100%;
 	color: #FFF;
 	background-color: #AE0000;
+}
+
+noscript a {
+	color: #fff;
 }
 
 section {
@@ -70,7 +74,7 @@ footer {
 .menu_class {
 	background-color: #333;
 	overflow: hidden;
-	margin: 10px 10px;
+	margin: 10px;
 	padding: 0px;
 	overflow: hidden;
 	border: 2px solid #ccc;
@@ -86,7 +90,7 @@ footer {
 	font-size: 17px;
 }
 
-.menu_class a:hover {
+.menu_class a:hover:not(#greetingMessage) {
 	background-color: #00A9BC;
 }
 
@@ -193,6 +197,8 @@ nav li a:hover:not(#nav_first_child) {
 }
 
 #login {
+	box-sizing: border-box;
+	max-width: 350px;
 	padding: 10px 10px;
 	border: 1px solid #999;
 	border-radius: 4px;
@@ -314,7 +320,7 @@ footer .copyright {
 
 /* MEDIA QUERIES */
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 800px), all and (max-device-width: 480px) {
 	.menu_class a:not(:first-child), .menu_class input {
 		display: none;
 	}
