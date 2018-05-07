@@ -39,9 +39,17 @@ aside {
 	padding: 10px;
 }
 
-footer {
-	position: absolute;
-	bottom: 0;
+img {
+	display: block;
+	margin: auto; 
+}
+
+table {
+	margin: auto; 
+}
+
+figcaption {
+	text-align: center;
 }
 
 th {
@@ -52,8 +60,9 @@ ul {
 	list-style-position: inside;
 }
 
-figcaption {
-	text-align: center;
+footer {
+	position: absolute;
+	bottom: 0;
 }
 
 /* MENU PRINCIPAL */
@@ -61,7 +70,7 @@ figcaption {
 .menu_class {
 	background-color: #333;
 	overflow: hidden;
-	margin: 0px 10px;
+	margin: 10px 10px;
 	padding: 0px;
 	overflow: hidden;
 	border: 2px solid #ccc;
@@ -203,6 +212,11 @@ nav li a:hover:not(#nav_first_child) {
 	font-size: 15px;
 	line-height: 15px;
 	text-decoration: none;
+	transition-duration: 500ms;
+}
+
+#envoyer:hover {
+	background-color: #24DA2B;
 }
 
 #left_tools p {
