@@ -1,5 +1,33 @@
 /* REGLES GENERALES */
 
+.chatboxActive {
+	overflow-y: scroll;
+	height: 400px;
+	width: 400px;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	border: solid;
+	border-color: #00A9BC;
+	border-width: 10px;
+	background-color: white;
+	z-index: 3;
+}
+
+.chatbox {
+	overflow-y: scroll;
+	height: 400px;
+	width: 400px;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	border: solid;
+	border-color: red;
+	border-width: 10px;
+	background-color: white;
+	z-index: 3;
+}
+
 body {
 	font-family: 'AileronRegular';
 	font-weight: normal;
@@ -332,6 +360,8 @@ footer .copyright {
 =======
 >>>>>>> 9c786cf... Ajout d'une banière au-dessus du menu lorsque le JavaScript n'est pas activé, modifications légères du menu avec l'ajout de liens externes notamment et ajout d'un article et d'une vidéo dans "presentation.html".
 =======
+
+
 
 /* MEDIA QUERIES */
 

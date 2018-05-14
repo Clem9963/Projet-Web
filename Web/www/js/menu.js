@@ -6,3 +6,12 @@ function displayMenu() {
 		x.className = "menu_class";
 	}
 }
+
+document.getElementById('chatbox').addEventListener('click', function(e){
+	var x = document.getElementById("chatbox");
+	if (x.className === "chatbox") {
+		x.className = "chatboxActive";
+	} else {
+		x.className = "chatbox";
+	}
+});
