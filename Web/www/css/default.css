@@ -15,17 +15,20 @@
 }
 
 .chatbox {
-	overflow-y: scroll;
-	height: 400px;
-	width: 400px;
+	height: 20px;
+	width: 100px;
 	position: fixed;
 	bottom: 0;
 	right: 0;
 	border: solid;
-	border-color: red;
-	border-width: 10px;
+	border-color: #333;
+	border-width: 3px;
 	background-color: white;
 	z-index: 3;
+}
+
+.chatbox div:not(:first-child)  {
+	display: none;
 }
 
 body {
