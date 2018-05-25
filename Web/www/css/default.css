@@ -54,10 +54,21 @@ table {
 
 figcaption {
 	text-align: center;
+	margin-top: 20px;
 }
 
-th {
+caption {
+	margin: 20px 0px;
+	font-weight: bold;
+	font-style: italic;
+}
+
+#infobox th {
 	text-align: left
+}
+
+table:not(#infobox) th {
+	padding: 10px;
 }
 
 ul {
@@ -253,12 +264,16 @@ footer h2 {
 	opacity:.2
 =======
 	opacity:.2;
+<<<<<<< HEAD
 	transition-duration: 500ms;
 >>>>>>> 813f87a... Ajout d'une transition pour le 3D Transform du pied de page dans "presentation.html" et d'une transition pour la coloration des inputs dans "register.html". Par ailleurs, déplacement du formulaire de connexion vers la gauche de la page dans "presentation.html".
+=======
+	transition-duration: 3s;
+>>>>>>> c42873b... Ajout de contenu dans les différentes pages (présentation, programmation et mécanique).
 }
 
 footer h2:hover {
-	transform: rotate3d(1,2,3,45deg);
+	transform: rotate3d(0,1,0,360deg);
 }
 
 footer ul {
