@@ -10,9 +10,10 @@
 
 		<title>Wifibot - La programmation</title>
 
-		<link rel="stylesheet" href="../css/normalize.css"> 
 		<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/aileron" type="text/css"/>
+		<link rel="stylesheet" href="../css/normalize.css"> 
 		<link rel="stylesheet" href="../css/default.css"> 
+		<link rel="stylesheet" href="../css/specific.css"> 
 
 		<!-- Copyright -->
 		<link rel="license" href="http://creativecommons.org/licenses/by-nc-nd/2.0/fr/">
@@ -48,7 +49,7 @@
 							<li><a id="nav_first_child" href="#">NAVIGATION</a></li>
 							<li><a href="./presentation.html">Présentation</a></li>
 							<li><a href="./mechanics.html">Mécanique</a></li>
-							<li><a href="./programming.html">Programmation</a></li>
+							<li><a href="#programming">Programmation</a></li>
 						</ul>
 					</nav>
 
@@ -75,17 +76,21 @@
 					</figure>
 				</aside>
 
-				<article>
+				<article id="programming">
 					<h2>La Programmation</h2>
-					<p>Le Wifibot, puisqu'il contient un <abbr title="système d'exploitation">OS</abbr> classique, peut exécuter n'importe quel programme fait pour cet OS.</p>
-					<p>La carte de contrôle moteur est connectés par une liaison rs232 avec l'ordinateur. Il faudra donc écrire une librairie pour envoyer les bons signaux à la carte depuis votre programme. Le protocole de communication peut être trouvé <a href="http://www.wifibot.com/download/2012/LOW_LEVEL_PROTOCOLE_RS232_DSPIC33EP.pdf">ici</a>. Un exemple de librairie de communication avec la carte en C est donné.</p>
-					<p>La carte de contrôle n'est pas programmable, et comprend les fonctions suivantes:</p>
+					<p>Le Wifibot, puisqu'il contient un <abbr title="Système d'exploitation">OS</abbr> classique, peut exécuter n'importe quel programme fait pour cet OS.</p>
+					<p>La carte de contrôle moteur est connectés par une liaison <em>RS-232</em> avec l'ordinateur. Il faudra donc écrire ou télécharger une librairie pour envoyer les bons signaux à la carte depuis le programme. Le protocole de communication peut d'ailleurs être trouvé <a href="http://www.wifibot.com/download/2012/LOW_LEVEL_PROTOCOLE_RS232_DSPIC33EP.pdf">ici</a>. Un exemple de librairie de communication avec la carte écrite en C y figure.</p>
+					<p>La carte de contrôle n'est pas programmable mais comprend cependant les fonctions suivantes :</p>
 					<ul>
-						<li>envoie du niveau de batterie, de la vitesse des moteurs gauches/droits, la distance parcourue par les moteurs, les distances mesurées par les capteurs de distance</li>
+						<li>envoi du niveau de batterie, de la vitesse des moteurs gauches et droits, la distance parcourue par les moteurs, les distances mesurées par les capteurs de distance</li>
 						<li>contrôle de la puissance envoyée aux moteurs</li>
 						<li>contrôle de la vitesse des moteurs par une boucle PID</li>
 						<li>contrôle de 3 relais integrés</li>
 					</ul>
+					<figure id="rs232">
+						<img src="../ressources/pictures/rs232.jpg" alt="">
+						<figcaption>Connecteurs RS-232 femelles similaires à ceux présents sur le robot</figcaption>
+					</figure>
 				</article>
 				
 			</div>

@@ -1,40 +1,13 @@
-/* REGLES GENERALES */
-
-.chatboxActive {
-	overflow-y: scroll;
-	height: 400px;
-	width: 400px;
-	position: fixed;
-	bottom: 0;
-	right: 0;
-	border: solid;
-	border-color: #00A9BC;
-	border-width: 10px;
-	background-color: white;
-	z-index: 3;
-}
-
-.chatbox {
-	height: 20px;
-	width: 100px;
-	position: fixed;
-	bottom: 0;
-	right: 0;
-	border: solid;
-	border-color: #333;
-	border-width: 3px;
-	background-color: white;
-	z-index: 3;
-}
-
-.chatbox div:not(:first-child)  {
-	display: none;
-}
+/* REGLES GENERALES PAR DEFAUT */
 
 body {
 	font-family: 'AileronRegular';
 	font-weight: normal;
 	font-style: normal; 
+}
+
+p {
+	text-align: justify; 
 }
 
 noscript p {
@@ -69,7 +42,7 @@ aside {
 	display: block;
 	clear: right;
 	float: right;
-	margin: 10px;
+	margin: 10px 20px;
 	align-self: flex-start;
 	padding: 10px;
 }
@@ -92,14 +65,6 @@ caption {
 	margin: 20px 0px;
 	font-weight: bold;
 	font-style: italic;
-}
-
-#infobox th {
-	text-align: left
-}
-
-table:not(#infobox) th {
-	padding: 10px;
 }
 
 ul {
@@ -327,7 +292,12 @@ footer a{
 
 footer .copyright {
 	opacity:.5;
+<<<<<<< HEAD
 	line-height:1.7
+=======
+	line-height:1.7;
+	text-align: center;
+>>>>>>> f51c321... Mise en forme, diverses améliorations, correction des fautes.
 }
 
 .list-inline {

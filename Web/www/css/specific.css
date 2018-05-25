@@ -1,0 +1,73 @@
+/* REGLES SPECIFIQUES */
+
+/* presentation.html */
+
+.chatboxActive {
+	overflow-y: scroll;
+	height: 400px;
+	width: 400px;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	border: solid;
+	border-color: #00A9BC;
+	border-width: 10px;
+	background-color: white;
+	z-index: 3;
+}
+
+.chatbox {
+	height: 20px;
+	width: 100px;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	border: solid;
+	border-color: #333;
+	border-width: 3px;
+	background-color: white;
+	z-index: 3;
+}
+
+.chatbox div:not(:first-child)  {
+	display: none;
+}
+
+#infobox th {
+	text-align: left
+}
+
+/* mechanics.html */
+
+#products th {
+	padding: 10px;
+}
+
+#pictures {
+	display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px; 
+}
+
+#pictures img {
+	width: 100%;
+	max-width: 340px;
+}
+
+@media all and (max-width: 800px), all and (max-device-width: 480px) {
+	#pictures {
+		flex-direction: column;
+	}
+}
+
+/* programming.html */
+
+#rs232 {
+	width: 40%;
+	margin-top: 35px;
+}
+
+#rs232 img {
+	width: 100%;
+}
