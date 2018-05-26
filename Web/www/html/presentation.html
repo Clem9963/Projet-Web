@@ -128,7 +128,14 @@
 
 				<div id="chatbox" class="chatbox"> 
 					<div><strong>ChatBox</strong></div>
-					<div>Ligne chat</div>
+					<div id="conversation"></div>
+					<div id="chatDiv">
+						<form id="chatForm" name="chat" action="#">
+							<input type="text" id="chatmsg" name="msg" title="Entrez un message">
+							<input type="submit" title="Envoyer">
+						</form>
+						<div id=chatReturnedMsg> </div>
+					</div>
 				</div>
 				
 				
@@ -149,9 +156,9 @@
 			</p>
 	</footer>
 
+	<script src="http://code.jquery.com/jquery.js"></script>
 	<script src="../js/connect.js"></script>
 	<script src="../js/menu.js"></script>
-	<script src="http://code.jquery.com/jquery.js"></script>
 
 	</body>
 </html>

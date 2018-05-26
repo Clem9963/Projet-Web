@@ -33,6 +33,54 @@
 	display: none;
 }
 
+#chatDiv {
+	position: sticky;
+	bottom: 0;
+	width: -webkit-fill-available;
+	background: white;
+}
+
+#chatForm {
+	display: flex;
+    flex-flow: row;
+}
+
+#chatmsg {
+	flex-grow: 1;
+}
+
+.chatMessage {
+	border: solid;
+	border-width: 1px 0px 1px 0px;
+	border-color: gray;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.chatDate {
+	order: 1;
+	font-size: 80%;
+	font-style: italic;
+	color: grey;
+	flex-basis: 16%;
+}
+.chatTime {
+	order: 2;
+	font-size: 80%;
+	font-style: italic;
+	color: grey;
+	flex-basis: 84%;
+}
+.chatUser {
+	order: 3;
+	font-weight: bold;
+	color: blue;
+	margin-right: 0.7em;
+}
+.chatmsg {
+	order: 4;
+}
+
 #infobox th {
 	text-align: left
 }
