@@ -29,7 +29,7 @@ noscript a {
 	color: #fff;
 }
 
-section {
+main {
 	display: flex;
 }
 
@@ -95,6 +95,7 @@ footer {
 	padding: 14px 16px;
 	text-decoration: none;
 	font-size: 17px;
+	font-variant: small-caps;
 }
 
 .menu_class a:hover:not(#greetingMessage) {
@@ -368,7 +369,7 @@ footer .copyright {
 		width: 90%;
 	}
 
-	section {
+	main {
 		display: flex;
 		flex-direction: column-reverse;
 	}
