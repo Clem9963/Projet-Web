@@ -15,13 +15,12 @@ noscript p {
 	font-family: sans-serif;
 	top: 0;
 	left: 0;
-	width: auto;
 	margin: 10px;
 	padding: 5px;
 	text-align: center;
 	font-weight: bold;
 	font-size: 100%;
-	color: #FFF;
+	color: #fff;
 	background-color: #AE0000;
 }
 
@@ -71,10 +70,6 @@ ul {
 	list-style-position: inside;
 }
 
-footer {
-	position: absolute;
-	bottom: 0;
-}
 
 /* MENU PRINCIPAL */
 
@@ -83,7 +78,6 @@ footer {
 	overflow: hidden;
 	margin: 10px;
 	padding: 0px;
-	overflow: hidden;
 	border: 2px solid #ccc;
 }
 
@@ -98,11 +92,7 @@ footer {
 	font-variant: small-caps;
 }
 
-.menu_class a:hover:not(#greetingMessage) {
-	background-color: #00A9BC;
-}
-
-.active {
+.menu_class a:hover:not(#greetingMessage), .active {
 	background-color: #00A9BC;
 }
 
@@ -151,17 +141,17 @@ nav {
 
 nav ul {
 	list-style-type: none;
-	padding: 0;
+	padding: 0px;
 	width: auto;
 	background-color: #f1f1f1;
 }
 
 nav li a {
 	display: block;
-	color: #000;
+	color: black;
 	padding: 8px 16px;
 	text-decoration: none;
-	font-size: 125%
+	font-size: 22px;
 }
 
 nav li a#nav_first_child {
@@ -179,17 +169,25 @@ nav li a:hover:not(#nav_first_child) {
 =======
 /* Formulaire de connexion */
 
-#left_tools h3 {
+#left_tools h2 {
 	font-size: 20px;
 	font-weight: 600;
 	margin: 10px;
+}
+
+#login {
+	box-sizing: border-box;
+	max-width: 350px;
+	padding: 10px 10px;
+	border: 1px solid #999;
+	border-radius: 4px;
 }
 
 .form_val {
 	width: 100%;
 	box-sizing: border-box;
 	padding: 12px;
-	margin: 5px 0;
+	margin: 5px 0px;
 	border: 1px solid #CCC;
 	border-radius: 4px;
 	opacity: 0.85;
@@ -204,25 +202,17 @@ nav li a:hover:not(#nav_first_child) {
 	box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
 }
 
-#login {
-	box-sizing: border-box;
-	max-width: 350px;
-	padding: 10px 10px;
-	border: 1px solid #999;
-	border-radius: 4px;
-}
-
 #envoyer {
+	width: 100%;
+	display: inline-block;
 	margin: 5px auto;
 	padding: 12px;
 	background-color: #4CAF50;
 	color: white;
 	cursor: pointer;
-	width: 100%;
 	border: none;
 	border-radius: 4px;
 	opacity: 0.85;
-	display: inline-block;
 	font-size: 15px;
 	line-height: 15px;
 	text-decoration: none;
@@ -243,6 +233,7 @@ nav li a:hover:not(#nav_first_child) {
 /* PIED DE PAGE */
 
 footer {
+<<<<<<< HEAD
 	background-color:#fff;
 	border-top:1px solid #ededed;
 	padding:50px;
@@ -250,9 +241,19 @@ footer {
 	position:relative;
 	color:#484848;
 	text-align:center
+=======
+	position: relative;
+	bottom: 0;
+	background-color: #fff;
+	border-top: 1px solid #ededed;
+	padding: 50px;
+	z-index: 2;
+	color: #484848;
+	text-align: center;
+>>>>>>> 6b0753f... Dernières améliorations globales.
 }
 
-footer h2 {
+footer h1 {
 	margin-bottom:30px;
 	margin-top:0;
 	font-size:28px;
@@ -269,12 +270,25 @@ footer h2 {
 >>>>>>> c42873b... Ajout de contenu dans les différentes pages (présentation, programmation et mécanique).
 }
 
-footer h2:hover {
+footer h1:hover {
 	transform: rotate3d(0,1,0,360deg);
 }
 
 footer ul {
+<<<<<<< HEAD
 	margin-bottom:24px
+=======
+	margin-bottom:24px;
+	padding-left:0;
+	margin-left:-5px;
+	list-style:none;
+}
+
+footer ul>li {
+	display:inline-block;
+	padding-right:5px;
+	padding-left:5px;
+>>>>>>> 6b0753f... Dernières améliorations globales.
 }
 
 footer ul li {
@@ -284,6 +298,7 @@ footer ul li {
 }
 
 footer p {
+<<<<<<< HEAD
 	margin-bottom:30px
 }
 
@@ -292,6 +307,9 @@ footer a{
 }
 
 footer .copyright {
+=======
+	margin-bottom:30px;
+>>>>>>> 6b0753f... Dernières améliorations globales.
 	opacity:.5;
 <<<<<<< HEAD
 	line-height:1.7
@@ -301,6 +319,7 @@ footer .copyright {
 >>>>>>> f51c321... Mise en forme, diverses améliorations, correction des fautes.
 }
 
+<<<<<<< HEAD
 .list-inline {
 	padding-left:0;
 	margin-left:-5px;
@@ -317,6 +336,10 @@ footer .copyright {
 {
 =======
 	padding-left:5px;
+=======
+footer a{
+	color:#333;
+>>>>>>> 6b0753f... Dernières améliorations globales.
 }
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -334,7 +357,6 @@ footer .copyright {
 =======
 >>>>>>> 9c786cf... Ajout d'une banière au-dessus du menu lorsque le JavaScript n'est pas activé, modifications légères du menu avec l'ajout de liens externes notamment et ajout d'un article et d'une vidéo dans "presentation.html".
 =======
-
 
 
 /* MEDIA QUERIES */
@@ -383,6 +405,7 @@ footer .copyright {
 =======
 
 	iframe {
+		margin: 20px 0px;
 		width: 100%;
 		height: auto;
 	}

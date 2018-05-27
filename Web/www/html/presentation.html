@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="UTF-8">
 		<meta name="author" content="Clément Dif - Félix Dhumes" />
 		
 		<!-- Meta -->
@@ -35,7 +35,7 @@
 				<a href="http://www.wifibot.com/download/2012/wifibotlab_french_guide2012.pdf">Manuel d'utilisation</a>
 				<a href="https://www.isima.fr/wifibot/">Projet WifiBot ISIMA</a>
 				<a id="greetingMessage"></a>
-				<a href="#" id="menu_icon" onclick="displayMenu()">&#9776;</a>
+				<a href="#null" id="menu_icon">&#9776;</a>
 				<input type="text" name="search" placeholder="Rechercher...">
 			</div> 
 
@@ -46,7 +46,7 @@
 				<div id="left_tools">
 					<nav>
 						<ul>
-							<li><a id="nav_first_child" href="#">NAVIGATION</a></li>
+							<li><a id="nav_first_child" href="#null">NAVIGATION</a></li>
 							<li><a href="#presentation">Présentation</a></li>
 							<li><a href="./mechanics.html">Mécanique</a></li>
 							<li><a href="./programming.html">Programmation</a></li>
@@ -54,7 +54,7 @@
 					</nav>
 
 					<div id="login">
-						<h3>Se connecter</h3>
+						<h2>Se connecter</h2>
 						<form name="connect" id="connexionForm" target="_blank">
 							<input class="form_val" name="username" id="username" type="text" placeholder="Nom d'utilisateur"/>
 							<input class="form_val" name="userpwd" id="userpwd" type="password" placeholder="Mot de passe"/>
@@ -68,98 +68,96 @@
 				</div>
 			</div>
 
-		<section>
-			<div id="script_alert">
-				L'expérience ergonomique sur ce site est permise grâce au JavaScript.
-				<span id="ok_button">✓ J'ai compris</span>
-			</div>
+			<section>
+				<div id="script_alert">
+					L'expérience ergonomique sur ce site est permise grâce au JavaScript.<span id="ok_button">✓ J'ai compris</span>
+				</div>
 
-			<div>
-				<aside>
-					<figure>
-						<img src="http://wifibot.com/v4pluslidarp.png?v=266bgo1ome0o6kcg" alt="Exemple d'un robot wifibot avec 4 roues, un lidar et une caméra">
-						<figcaption>Un robot Wifibot</figcaption>
-					</figure>
-					<table id="infobox">
-						<tbody>
-							<tr>
-								<th>Constructeur</th>
-								<td>Nexter Robotics</td>
-							</tr>
-							<tr>
-								<th>Année de construction</th>
-								<td>2003 / --</td>
-							</tr>
-							<tr>
-								<th>Vitesse maximale</th>
-								<td>1.6 m/s</td>
-							</tr>
-							<tr>
-								<th>Taille</th>
-								<td>40*30*18 cm</td>
-							</tr>
-						</tbody>
-					</table>
-				</aside>
+				<div>
+					<aside>
+						<figure>
+							<img src="../ressources/pictures/v4pluslidarp.png" alt="Exemple d'un robot wifibot avec 4 roues, un lidar et une caméra">
+							<figcaption>Un robot Wifibot</figcaption>
+						</figure>
+						<table id="infobox">
+							<tbody>
+								<tr>
+									<th>Constructeur</th>
+									<td>Nexter Robotics</td>
+								</tr>
+								<tr>
+									<th>Année de construction</th>
+									<td>2003 / --</td>
+								</tr>
+								<tr>
+									<th>Vitesse maximale</th>
+									<td>1.6 m/s</td>
+								</tr>
+								<tr>
+									<th>Taille</th>
+									<td>40*30*18 cm</td>
+								</tr>
+							</tbody>
+						</table>
+					</aside>
 
-				<article id="presentation">
-					<h2>Présentation</h2>
-					<div>
-						<p>Le robot <a href="http://www.wifibot.com">Wifibot</a> est une plateforme robotique mobile composée de:</p>
-						<ul>
-							<li>un chassis</li>
-							<li>des moteurs</li>
-							<li>des roues</li>
-							<li>un système de contrôle</li>
-							<li>un ordinateur embarqué <strong>Linux</strong> ou <strong>Windows</strong></li>
-						</ul>
-					</div>
-					<div>
-						<p>A cet ensemble de base peuvent s'ajouter plusieurs options :</p>
-						<ul>
-							<li>un <a href="https://fr.wikipedia.org/wiki/Lidar#Lidars_t%C3%A9l%C3%A9m%C3%A8tres_laser_%C3%A0_balayage">lidar</a></li>
-							<li>des capteurs de distance</li>
-							<li>un processeur plus puissant</li>
-							<li>une webcam</li>
-							<li>un GPS</li>
-						</ul>
-					</div>
-					<p>Le robot, puisqu'il comprend un systeme d'exploitation classique, est capable d'éxécuter une variété de langages. La communication avec la carte de contrôle se fait par un port série. Viennent également s'ajouter des ports USB pour brancher des périphériques externes tels que clavier, écran, caméra, kinect, ainsi qu'une sortie audio et une sortie VGA pour un écran. La carte de contrôle permet d'ailleurs de commander des dispositifs externes à l'aide de relais.</p>
-				</article>
+					<article id="presentation">
+						<h1>Présentation</h1>
+						<div>
+							<p>Le robot <a href="http://www.wifibot.com">Wifibot</a> est une plateforme robotique mobile composée de:</p>
+							<ul>
+								<li>un chassis</li>
+								<li>des moteurs</li>
+								<li>des roues</li>
+								<li>un système de contrôle</li>
+								<li>un ordinateur embarqué <strong>Linux</strong> ou <strong>Windows</strong></li>
+							</ul>
+						</div>
+						<div>
+							<p>A cet ensemble de base peuvent s'ajouter plusieurs options :</p>
+							<ul>
+								<li>un <a href="https://fr.wikipedia.org/wiki/Lidar#Lidars_t%C3%A9l%C3%A9m%C3%A8tres_laser_%C3%A0_balayage">lidar</a></li>
+								<li>des capteurs de distance</li>
+								<li>un processeur plus puissant</li>
+								<li>une webcam</li>
+								<li>un GPS</li>
+							</ul>
+						</div>
+						<p>Le robot, puisqu'il comprend un systeme d'exploitation classique, est capable d'éxécuter une variété de langages. La communication avec la carte de contrôle se fait par un port série. Viennent également s'ajouter des ports USB pour brancher des périphériques externes tels que clavier, écran, caméra, kinect, ainsi qu'une sortie audio et une sortie VGA pour un écran. La carte de contrôle permet d'ailleurs de commander des dispositifs externes à l'aide de relais.</p>
+					</article>
 
-				<article>
-					<h2>Robot WifiBot contrôlé à l'aide d'une manette Dualshock © 3</h2>
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/T5r8nc63_H0?rel=0" allowfullscreen></iframe>
-				</article>
+					<article>
+						<h1>Robot WifiBot contrôlé à l'aide d'une manette Dualshock © 3</h1>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/T5r8nc63_H0?rel=0" allowfullscreen></iframe>
+					</article>
 
-				<div id="chatbox" class="chatbox"> 
-					<div><img src="http://www.iconarchive.com/download/i103310/vcferreira/firefox-os/sms.ico" alt=""></div>
-					<div id="conversation"></div>
-					<div id="chatDiv">
-						<form id="chatForm" name="chat" action="#">
-							<input type="text" id="chatmsg" name="msg" title="Entrez un message">
-							<input type="submit" title="Envoyer">
-						</form>
-						<div id=chatReturnedMsg> </div>
+					<div id="chatbox" class="chatbox"> 
+						<div><img src="../ressources/pictures/sms.ico" alt="ChatBox"></div>
+						<div id="conversation"></div>
+						<div id="chatDiv">
+							<form id="chatForm" name="chat" action="#">
+								<input type="text" id="chatmsg" name="msg" title="Entrez un message">
+								<input type="submit" title="Envoyer">
+							</form>
+							<div id=chatReturnedMsg> </div>
+						</div>
 					</div>
 				</div>
-				
-				
-			</div>
-		</section>
+					
+			</section>
 
 		</main>
 		
 		<footer>
-		  <h2>Les robots, c'est bien ! &#10084;</h2>
+			<h1>Les robots, c'est bien ! &#10084;</h1>
 
-		  <ul class="list-inline">
-					<li><a href="http://wifibot.com/" class="neon">Site constructeur</a></li>
-					<li><a href="mailto:felix@dhumes.fr" class="neon">Contact</a></li>
-		  </ul>
+			<ul class="list-inline">
+				<li><a href="http://wifibot.com/" class="neon">Site constructeur</a></li>
+				<li><a href="mailto:felix@dhumes.fr" class="neon">Contact</a></li>
+			</ul>
 
 			<p class="copyright">
-				Copyright © 2018 <a href="#">Clément Dif - Félix Dhumes</a>.
+				Copyright © 2018 <a href="#null">Clément Dif - Félix Dhumes</a>.
 				<span class="second-line">Tous droits réservés.</span>
 			</p>
 		</footer>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="UTF-8">
 		<meta name="author" content="Clément Dif - Félix Dhumes" />
 		
 		<!-- Meta -->
@@ -35,10 +35,9 @@
 				<a href="http://www.wifibot.com/download/2012/wifibotlab_french_guide2012.pdf">Manuel d'utilisation</a>
 				<a href="https://www.isima.fr/wifibot/">Projet WifiBot ISIMA</a>
 				<a id="greetingMessage"></a>
-				<a href="#" id="menu_icon">&#9776;</a>
+				<a href="#null" id="menu_icon">&#9776;</a>
 				<input type="text" name="search" placeholder="Rechercher...">
 			</div> 
-
 		</header>
 
 		<main>
@@ -46,7 +45,7 @@
 				<div id="left_tools">
 					<nav>
 						<ul>
-							<li><a id="nav_first_child" href="#">NAVIGATION</a></li>
+							<li><a id="nav_first_child" href="#null">NAVIGATION</a></li>
 							<li><a href="./presentation.html">Présentation</a></li>
 							<li><a href="#mechanics">Mécanique</a></li>
 							<li><a href="./programming.html">Programmation</a></li>
@@ -54,7 +53,7 @@
 					</nav>
 
 					<div id="login">
-						<h3>Se connecter</h3>
+						<h2>Se connecter</h2>
 						<form name="connect" id="connexionForm" target="_blank">
 							<input class="form_val" name="username" id="username" type="text" placeholder="Nom d'utilisateur"/>
 							<input class="form_val" name="userpwd" id="userpwd" type="password" placeholder="Mot de passe"/>
@@ -68,8 +67,7 @@
 				</div>
 			</div>
 
-		<section>
-			<div>
+			<section>
 				<aside>
 					<table id="products">
 					
@@ -102,44 +100,42 @@
 				</aside>
 					
 				<article id="mechanics">
-					<h2>La mécanique</h2>
+					<h1>La mécanique</h1>
 					<p>Le Wifibot comprend un châssis en alluminium de 3 millimètres possédant des renforts triangulaires garantissant une rigidité suffisante. Il y a en outre une plateforme pour monter l'ordinateur, des capteurs, la caméra si besoin est, etc...</p>
-					<p>Les roues sont chacunes controllées par un moteur séparé, et disposent d'un encodeur optique avec une résolution de 2048 tics/tour. La carte de contrôle est quant à elle basée sur un microcontrolleur <a href="http://www.microchip.com/wwwproducts/Devices.aspx?dDocName=en532314">16 bits DSPIC</a>, qui propose ainsi une interface pour le contrôle des moteurs, des capteurs et des dispositifs externes grace à 3 relais statiques.</p>
-					<h2>Plateforme et composants</h2>
+					<p>Les roues sont chacunes contrôlées par un moteur séparé et disposent d'un encodeur optique avec une résolution de 2048 tics/tour. La carte de contrôle est quant à elle basée sur un microcontrolleur <a href="http://www.microchip.com/wwwproducts/Devices.aspx?dDocName=en532314">16 bits DSPIC</a>, qui propose ainsi une interface pour le contrôle des moteurs, des capteurs et des dispositifs externes grace à 3 relais statiques.</p>
+					<h1>Plateforme et composants</h1>
 					<p>La plateforme est générique pour les robots Wifibot Lab V4, c'est-à-dire qu'elle permet un ajout et une disposition relativement simple, rapide et pratique de composants obligatoires comme l'ordinateur ou annexes comme une caméra ou une Kinect par exemple.</p>
 					<div id="pictures">
 						<figure>
-							<img src="http://www.wifibot.com/labplatp.png?v=5em2ggjxw4t4t8" alt="">
+							<img src="../ressources/pictures/plateforme.png" alt="Plateforme générique">
 							<figcaption>Plateforme 4x4 générique avec gestion de l'alimentation</figcaption>
 						</figure>
 						<figure>
-							<img src="http://www.wifibot.com/plateformep.png?v=28gqoo1ome0o6kix" alt="">
+							<img src="../ressources/pictures/components.png" alt="Composants">
 							<figcaption>Un exemple de composants à monter</figcaption>
 						</figure>
 					</div>
 				</article>
-			</div>
-		</section>
+			</section>
 
 		</main>
 		
 		<footer>
-		  <h2>Les robots, c'est bien ! &#10084;</h2>
+			<h1>Les robots, c'est bien ! &#10084;</h1>
 
-		  <ul class="list-inline">
-					<li><a href="http://wifibot.com/" class="neon">Site constructeur</a></li>
-					<li><a href="mailto:felix@dhumes.fr" class="neon">Contact</a></li>
-		  </ul>
+			<ul class="list-inline">
+				<li><a href="http://wifibot.com/" class="neon">Site constructeur</a></li>
+				<li><a href="mailto:felix@dhumes.fr" class="neon">Contact</a></li>
+			</ul>
 
 			<p class="copyright">
-				Copyright © 2018 <a href="#">Clément Dif - Félix Dhumes</a>.
+				Copyright © 2018 <a href="#null">Clément Dif - Félix Dhumes</a>.
 				<span class="second-line">Tous droits réservés.</span>
 			</p>
 		</footer>
 
 	<script src="../js/connect.js"></script>
 	<script src="../js/tools.js"></script>
-	<script src="../js/chatbox.js"></script>
 
 	</body>
 </html>

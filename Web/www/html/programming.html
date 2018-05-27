@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="UTF-8">
 		<meta name="author" content="Clément Dif - Félix Dhumes" />
 		
 		<!-- Meta -->
@@ -35,10 +35,9 @@
 				<a href="http://www.wifibot.com/download/2012/wifibotlab_french_guide2012.pdf">Manuel d'utilisation</a>
 				<a href="https://www.isima.fr/wifibot/">Projet WifiBot ISIMA</a>
 				<a id="greetingMessage"></a>
-				<a href="#" id="menu_icon" onclick="displayMenu()">&#9776;</a>
+				<a href="#null" id="menu_icon">&#9776;</a>
 				<input type="text" name="search" placeholder="Rechercher...">
 			</div> 
-
 		</header>
 
 		<main>
@@ -46,7 +45,7 @@
 				<div id="left_tools">
 					<nav>
 						<ul>
-							<li><a id="nav_first_child" href="#">NAVIGATION</a></li>
+							<li><a id="nav_first_child" href="#null">NAVIGATION</a></li>
 							<li><a href="./presentation.html">Présentation</a></li>
 							<li><a href="./mechanics.html">Mécanique</a></li>
 							<li><a href="#programming">Programmation</a></li>
@@ -54,7 +53,7 @@
 					</nav>
 
 					<div id="login">
-						<h3>Se connecter</h3>
+						<h2>Se connecter</h2>
 						<form name="connect" id="connexionForm" target="_blank">
 							<input class="form_val" name="username" id="username" type="text" placeholder="Nom d'utilisateur"/>
 							<input class="form_val" name="userpwd" id="userpwd" type="password" placeholder="Mot de passe"/>
@@ -68,54 +67,52 @@
 				</div>
 			</div>
 
-		<section>
-			<div>
-				<aside>
-					<figure>
-						<img src="../ressources/pictures/ubuntu.png" alt="Logo ubuntu">
-						<figcaption>Le robot peut utiliser une distribution Linux comme Ubuntu</figcaption>
-					</figure>
-				</aside>
+			<section>
+				<div>
+					<aside>
+						<figure>
+							<img src="../ressources/pictures/ubuntu.png" alt="Logo ubuntu">
+							<figcaption>Le robot peut utiliser une distribution Linux comme Ubuntu</figcaption>
+						</figure>
+					</aside>
 
-				<article id="programming">
-					<h2>La Programmation</h2>
-					<p>Le Wifibot, puisqu'il contient un <abbr title="Système d'exploitation">OS</abbr> classique, peut exécuter n'importe quel programme fait pour cet OS.</p>
-					<p>La carte de contrôle moteur est connectés par une liaison <em>RS-232</em> avec l'ordinateur. Il faudra donc écrire ou télécharger une librairie pour envoyer les bons signaux à la carte depuis le programme. Le protocole de communication peut d'ailleurs être trouvé <a href="http://www.wifibot.com/download/2012/LOW_LEVEL_PROTOCOLE_RS232_DSPIC33EP.pdf">ici</a>. Un exemple de librairie de communication avec la carte écrite en C y figure.</p>
-					<p>La carte de contrôle n'est pas programmable mais comprend cependant les fonctions suivantes :</p>
-					<ul>
-						<li>envoi du niveau de batterie, de la vitesse des moteurs gauches et droits, la distance parcourue par les moteurs, les distances mesurées par les capteurs de distance</li>
-						<li>contrôle de la puissance envoyée aux moteurs</li>
-						<li>contrôle de la vitesse des moteurs par une boucle PID</li>
-						<li>contrôle de 3 relais integrés</li>
-					</ul>
-					<figure id="rs232">
-						<img src="../ressources/pictures/rs232.jpg" alt="">
-						<figcaption>Connecteurs RS-232 femelles similaires à ceux présents sur le robot</figcaption>
-					</figure>
-				</article>
+					<article id="programming">
+						<h1>La Programmation</h1>
+						<p>Le Wifibot, puisqu'il contient un <abbr title="Système d'exploitation">OS</abbr> classique, peut exécuter n'importe quel programme fait pour cet OS.</p>
+						<p>La carte de contrôle moteur est connectée par une liaison <em>RS-232</em> avec l'ordinateur. Il faudra donc écrire ou télécharger une <abbr title="Bibliothèque logicielle">librairie</abbr> pour envoyer les bons signaux à la carte depuis le programme. Le protocole de communication peut d'ailleurs être trouvé <a href="http://www.wifibot.com/download/2012/LOW_LEVEL_PROTOCOLE_RS232_DSPIC33EP.pdf">ici</a>. Un exemple de librairie de communication avec la carte écrite en C y figure.</p>
+						<p>La carte de contrôle n'est pas programmable mais comprend cependant les fonctions suivantes :</p>
+						<ul>
+							<li>envoi du niveau de batterie, de la vitesse des moteurs gauches et droits, la distance parcourue par les moteurs, les distances mesurées par les capteurs de distance</li>
+							<li>contrôle de la puissance envoyée aux moteurs</li>
+							<li>contrôle de la vitesse des moteurs par une boucle PID</li>
+							<li>contrôle de 3 relais integrés</li>
+						</ul>
+						<figure id="rs232">
+							<img src="../ressources/pictures/rs232.jpg" alt="Connecteur RS-232">
+							<figcaption>Connecteurs RS-232 femelles similaires à ceux présents sur le robot</figcaption>
+						</figure>
+					</article>
+				</div>
 				
-			</div>
-			
-		</section>
+			</section>
 		</main>
 		
 		<footer>
-		  <h2>Les robots, c'est bien ! &#10084;</h2>
+			<h1>Les robots, c'est bien ! &#10084;</h1>
 
-		  <ul class="list-inline">
-					<li><a href="http://wifibot.com/" class="neon">Site constructeur</a></li>
-					<li><a href="mailto:felix@dhumes.fr" class="neon">Contact</a></li>
-		  </ul>
+			<ul class="list-inline">
+				<li><a href="http://wifibot.com/" class="neon">Site constructeur</a></li>
+				<li><a href="mailto:felix@dhumes.fr" class="neon">Contact</a></li>
+			</ul>
 
 			<p class="copyright">
-				Copyright © 2018 <a href="#">Clément Dif - Félix Dhumes</a>.
+				Copyright © 2018 <a href="#null">Clément Dif - Félix Dhumes</a>.
 				<span class="second-line">Tous droits réservés.</span>
 			</p>
 		</footer>
 
 	<script src="../js/connect.js"></script>
 	<script src="../js/tools.js"></script>
-	<script src="../js/chatbox.js"></script>
 
 	</body>
 </html>

@@ -88,10 +88,10 @@ input:focus {
 
 #home_back {
 	width: 300px;
+	box-sizing: border-box;
 	margin: 20px auto;
 	padding: 15px 15px;
 	text-align: center;
 	border: 1px solid #d8dee2;
 	border-radius: 5px;
-	box-sizing: border-box;
 }

@@ -17,9 +17,14 @@
 	display: inline-block;
 	margin: 5px 10px;
 	padding: 1px 10px;
-	background: #4596ec !important;
+	background: #4596ec;
 	border-radius: 10px;
 	cursor: pointer;
+	transition-duration: 500ms;
+}
+
+#ok_button:hover {
+	background: #69aaef;
 }
 
 .chatboxActive {
@@ -115,12 +120,13 @@
 	display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 20px; 
+    margin: 20px 0px; 
 }
 
 #pictures img {
 	width: 100%;
 	max-width: 340px;
+	height: auto;
 }
 
 @media all and (max-width: 800px), all and (max-device-width: 480px) {
@@ -133,7 +139,7 @@
 
 #rs232 {
 	width: 40%;
-	margin-top: 35px;
+	margin: 35px 0px;
 }
 
 #rs232 img {
