@@ -36,12 +36,12 @@ document.getElementById('chatForm').addEventListener('click', function(e){
 });*/
 
 $(function() {
-    afficheConversation();
-      
-    $('#chatForm').submit(function(e) {
+	afficheConversation();
+	  
+	$('#chatForm').submit(function(e) {
 		e.preventDefault();
 
-        var message = $('#chatmsg').val();
+		var message = $('#chatmsg').val();
 		$.post('../htbin/chatsend.py', {'msg': message}, function(data) {
 
 			
@@ -54,9 +54,9 @@ $(function() {
 
 			afficheConversation();
 		});
-    });
+	});
 
-    function afficheConversation() {
+	function afficheConversation() {
 		$.get('../htbin/chatget.py', function(data) {
 
 			
@@ -93,7 +93,7 @@ $(function() {
 			if(isScrolledToBottom)
 				$('#chatbox').scrollTop($('#chatbox')[0].scrollHeight - $('#chatbox').innerHeight())
 		});
-    }
-      
-    //setInterval(afficheConversation, 4000);
+	}
+	  
+	//setInterval(afficheConversation, 4000);
   });

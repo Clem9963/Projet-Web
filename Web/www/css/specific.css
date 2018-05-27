@@ -67,7 +67,7 @@
 
 #chatForm {
 	display: flex;
-    flex-flow: row;
+	flex-flow: row;
 }
 
 #chatmsg {
@@ -118,9 +118,9 @@
 
 #pictures {
 	display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 20px 0px; 
+	justify-content: space-around;
+	align-items: center;
+	margin: 20px 0px; 
 }
 
 #pictures img {
