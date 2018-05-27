@@ -17,16 +17,16 @@
 }
 
 .chatbox {
-	height: 20px;
-	width: 100px;
 	position: fixed;
 	bottom: 0;
 	right: 0;
-	border: solid;
-	border-color: #333;
-	border-width: 3px;
-	background-color: white;
 	z-index: 3;
+}
+
+#chatbox img {
+	width: 64px;
+	height: 64px;
+	cursor: pointer;
 }
 
 .chatbox div:not(:first-child)  {
@@ -118,4 +118,10 @@
 
 #rs232 img {
 	width: 100%;
+}
+
+@media all and (max-width: 800px), all and (max-device-width: 480px) {
+	#rs232 {
+		width: 90%;
+	}
 }
