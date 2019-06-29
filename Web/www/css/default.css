@@ -164,9 +164,6 @@ nav li a:hover:not(#nav_first_child) {
 	color: white;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 /* Formulaire de connexion */
 
 #left_tools h2 {
@@ -229,19 +226,9 @@ nav li a:hover:not(#nav_first_child) {
 	margin: 10px 0px;
 }
 
->>>>>>> 813f87a... Ajout d'une transition pour le 3D Transform du pied de page dans "presentation.html" et d'une transition pour la coloration des inputs dans "register.html". Par ailleurs, déplacement du formulaire de connexion vers la gauche de la page dans "presentation.html".
 /* PIED DE PAGE */
 
 footer {
-<<<<<<< HEAD
-	background-color:#fff;
-	border-top:1px solid #ededed;
-	padding:50px;
-	z-index:2;
-	position:relative;
-	color:#484848;
-	text-align:center
-=======
 	position: relative;
 	bottom: 0;
 	background-color: #fff;
@@ -250,7 +237,6 @@ footer {
 	z-index: 2;
 	color: #484848;
 	text-align: center;
->>>>>>> 6b0753f... Dernières améliorations globales.
 }
 
 footer h1 {
@@ -258,16 +244,8 @@ footer h1 {
 	margin-top:0;
 	font-size:28px;
 	font-weight:300;
-<<<<<<< HEAD
-	opacity:.2
-=======
 	opacity:.2;
-<<<<<<< HEAD
-	transition-duration: 500ms;
->>>>>>> 813f87a... Ajout d'une transition pour le 3D Transform du pied de page dans "presentation.html" et d'une transition pour la coloration des inputs dans "register.html". Par ailleurs, déplacement du formulaire de connexion vers la gauche de la page dans "presentation.html".
-=======
 	transition-duration: 3s;
->>>>>>> c42873b... Ajout de contenu dans les différentes pages (présentation, programmation et mécanique).
 }
 
 footer h1:hover {
@@ -275,9 +253,6 @@ footer h1:hover {
 }
 
 footer ul {
-<<<<<<< HEAD
-	margin-bottom:24px
-=======
 	margin-bottom:24px;
 	padding-left:0;
 	margin-left:-5px;
@@ -288,75 +263,24 @@ footer ul>li {
 	display:inline-block;
 	padding-right:5px;
 	padding-left:5px;
->>>>>>> 6b0753f... Dernières améliorations globales.
 }
 
 footer ul li {
 	font-size:18px;
 	color:#343434;
-	line-height:1.6
+	line-height:1.6;
 }
 
 footer p {
-<<<<<<< HEAD
-	margin-bottom:30px
-}
-
-footer a{
-	color:#333;
-}
-
-footer .copyright {
-=======
 	margin-bottom:30px;
->>>>>>> 6b0753f... Dernières améliorations globales.
 	opacity:.5;
-<<<<<<< HEAD
-	line-height:1.7
-=======
 	line-height:1.7;
 	text-align: center;
->>>>>>> f51c321... Mise en forme, diverses améliorations, correction des fautes.
 }
 
-<<<<<<< HEAD
-.list-inline {
-	padding-left:0;
-	margin-left:-5px;
-	list-style:none
-}
-
-.list-inline>li {
-	display:inline-block;
-	padding-right:5px;
-<<<<<<< HEAD
-	padding-left:5px
-=======
-#contenu
-{
-=======
-	padding-left:5px;
-=======
 footer a{
 	color:#333;
->>>>>>> 6b0753f... Dernières améliorations globales.
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-#contenu {
->>>>>>> d8d7d3d... Correction d'un léger bug au niveau des bordures bleues dans le menu.
-	background-color: #777;
-<<<<<<< HEAD
-	height: 1000px;
->>>>>>> 1b35c8a... reorganisation des articles
-=======
-	height: 700px;
->>>>>>> 1eea0e5... ajout de css
-}
-=======
->>>>>>> 9c786cf... Ajout d'une banière au-dessus du menu lorsque le JavaScript n'est pas activé, modifications légères du menu avec l'ajout de liens externes notamment et ajout d'un article et d'une vidéo dans "presentation.html".
-=======
 
 
 /* MEDIA QUERIES */
@@ -399,10 +323,6 @@ footer a{
 	aside {
 		float: none;
 	}
-<<<<<<< HEAD
-}
->>>>>>> 0be883a... Améliorations globales et ajout d'une media query.
-=======
 
 	iframe {
 		margin: 20px 0px;
@@ -425,4 +345,3 @@ footer a{
 		margin-right: 30px;
 	}
 }
->>>>>>> b9fc7cb... Amélioration du design du site pour l'affichage sur mobile et petits écrans via une Media Query et un script JavaScript.
